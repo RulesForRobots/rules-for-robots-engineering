@@ -1,0 +1,17 @@
+{
+  "name": "rfr-engineering",
+  "version": "0.1.0",
+  "description": "Software stages, rules, reviewers, and skills for Rules for Robots. Empty until step 4 of the rebuild plan. Requires rfr-core.",
+  "author": {
+    "name": "Lifelike & Believable Animation Design"
+  },
+  "homepage": "https://github.com/RulesForRobots/rules-for-robots-engineering/tree/main/plugins/rfr-engineering",
+  "repository": "https://github.com/RulesForRobots/rules-for-robots-engineering",
+  "license": "MIT",
+  "dependencies": [
+    {
+      "name": "rfr-core",
+      "version": "^1.0"
+    }
+  ]
+}

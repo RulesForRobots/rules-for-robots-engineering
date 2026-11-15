@@ -1,0 +1,13 @@
+{
+  "name": "rules-for-robots-engineering",
+  "private": true,
+  "type": "module",
+  "description": "Building software with agents: the Rules for Robots plugins for any software project, and for web, Unreal Engine, and Android in particular.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "verify": "node .github/scripts/verify.mjs"
+  }
+}
