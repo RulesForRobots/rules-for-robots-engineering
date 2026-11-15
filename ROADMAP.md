@@ -5,6 +5,13 @@ Open work in this repository only. Work across repositories, and the order of th
 ## Step 4: rfr-engineering
 
 - The software stages and templates (brief, stories, design, user documentation, spec, tests, implementation, tutorial, validation), as `rfr-process`'s first set of stages.
+- A system design stage, approved after the stories and before the first feature's design, with its template. It is coarse on purpose:
+  - **The parts and their boundaries:** for each layer or component, what it owns, what it exposes to the others, and where its data lives. Contracts only, not internals.
+  - **The end-to-end path:** a full production, walked through from the stories, with each step mapped to the part that owns it.
+  - **The order of slices:** each slice ends with something that runs end to end and names the stories it covers.
+  - **Open questions** that no single part can settle.
+
+  Each feature's design cites the section it fills in, and when designing a feature shows the outer shape was wrong, the system design is revised first. Found on XR Studio In A Box: writing requirements and stories for every component made an end-to-end walkthrough possible, but layer 1's design went straight to implementation with no pass on the whole. Try it there first, as a system design written for the project as it stands and approved as a revision packet, and build the template from that. The engine side is in Core's roadmap, step 4.
 - TEST-001, TEST-003, and TEST-004 with their evals; the test-edit guard and test-change review.
 - `code-reviewer`, `security-reviewer`, `software-architect`, `review-pr`, `security-audit`, `plan-feature`, `lookup-api`.
 - Lasting tutorials and the tutorial runner; the docs lint (Vale).
